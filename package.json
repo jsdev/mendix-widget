@@ -1,0 +1,62 @@
+{
+  "name": "soarcustomspan",
+  "widgetName": "SoarCustomSpan",
+  "packagePath": "qvine.soarcustomspan",
+  "version": "2.0.0",
+  "description": "Span element with contextual icon classes and colors",
+  "copyright": "QVine 2020",
+  "author": "Ethan Steen",
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "README.md"
+  ],
+  "config": {
+    "widgetPath": "../../widgets",
+    "projectPath": "../IconBadgeWidgetTestApp/",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web",
+    "format": "prettier --write ."
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "10.21.2",
+    "@types/big.js": "6.2.2",
+    "@types/jest": "30.0.0",
+    "@types/node": "24.0.15",
+    "eslint": "8.57.1",
+    "prettier": "3.6.2",
+    "shx": "0.4.0",
+    "ts-loader": "9.5.2",
+    "typescript": "4.9.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0"
+  }
+}

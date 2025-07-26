@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+    <clientModule name="SoarCustomSpan" version="1.0.0" xmlns="http://www.mendix.com/clientModule/1.0/">
+        <widgetFiles>
+            <widgetFile path="SoarCustomSpan.xml"/>
+        </widgetFiles>
+        <files>
+            <file path="qvine/soarcustomspan"/>
+        </files>
+    </clientModule>
+</package>
