@@ -2,7 +2,7 @@
   "name": "soarcustomspan",
   "widgetName": "SoarCustomSpan",
   "packagePath": "qvine.soarcustomspan",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Span element with contextual icon classes and colors",
   "copyright": "QVine 2020",
   "author": "Ethan Steen",
@@ -26,6 +26,7 @@
     "lint:fix": "pluggable-widgets-tools lint:fix",
     "prerelease": "npm run lint",
     "release": "pluggable-widgets-tools release:web",
+    "release:flat": "pluggable-widgets-tools release:web && cp dist/1.0.0/qvine.soarcustomspan.SoarCustomSpan.mpk dist/qvine.SoarCustomSpan.mpk",
     "format": "prettier --write ."
   },
   "license": "Apache-2.0",
